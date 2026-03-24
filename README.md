@@ -380,3 +380,189 @@ public class Main {
 
     }
     }
+
+Questao de vetor
+
+Questão 01 
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner no = new Scanner(System.in);
+
+        int n[] ={1,2,3,4,5};
+        for(int a=0; a<=4;a++){
+            System.out.print(n[a]);
+        }
+    }
+}
+
+Questão 02
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner no = new Scanner(System.in);
+
+        int soma =0;
+        int n[] ={1,1,1,1,1,1};
+        for(int a=0; a<=5;a++){
+            soma += n[a];
+        }
+        System.out.print(soma);
+    }
+}
+
+Questão 03
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner no = new Scanner(System.in);
+        
+        int n[] ={1,2,3,4,5,6,7,67};
+        int m = n[0];
+
+        for(int a=0; a<n.length;a++){
+            if (n[a]>m){
+                m=n[a];
+            }
+        }
+        System.out.print(m);
+    }
+} 
+
+Questão 04
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner no = new Scanner(System.in);
+
+        int n[] ={22,222,333,444,555,665,777,888};
+        int m = n[0];
+
+        for(int a=0; a<n.length;a++){
+            if (n[a]<m){
+                m=n[a];
+            }
+        }
+        System.out.print(m);
+    }
+}
+
+Questão 05
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner no = new Scanner(System.in);
+
+        int n[] ={1,2,3,4,5,6,7,8,9,10};
+        int d = n[0];
+
+        for(int a=0; a<n.length;a++){
+            if (n[a] % 2==0){
+                d=n[a];
+                System.out.println("numero "+d+" Sao par");
+            }
+        }
+    }
+}
+
+Questão 06
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner no = new Scanner(System.in);
+
+        int n[] = {10, 10, 10, 10, 10, 10, 10, 10, 10, 10};
+        int m = 0;
+        int d = 0;
+
+        for (int a = 0; a < n.length; a++) {
+            m += n[a];
+            d = m/n.length;
+        }
+        System.out.println(d);
+
+    }
+}
+
+Questão 07 
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner no = new Scanner(System.in);
+
+        String n[]={"Lino", "Lucas", "Nohan", "Primo", "Miguel", "Brayan", "Halaand", "GT", "Gu"};
+
+
+        for (int a = 0; a < n.length; a++) {
+            System.out.println(n[a]+" "+a);
+        }
+
+
+    }
+}
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner no = new Scanner(System.in);
+
+        String n[]={"Lino", "Lucas", "Nohan", "Primo", "Miguel", "Brayan", "Halaand", "GT", "Gu"};
+
+
+        for (int a = 0; a < n.length; a++) {
+            System.out.println(n[a]+" "+a);
+        }
+
+
+    }
+}
+
+Questão 08
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner no = new Scanner(System.in);
+
+        int n[] = {1,2,3,4,5,6,7};
+
+        System.out.println("coloque uma dessa opicao");
+
+        System.out.println("1,2,3,4,5,6,7");
+
+        int v = no.nextInt();
+
+        boolean entrada = false;
+
+        for (int a=0;a<n.length;a++){
+            if (n[a]==v){
+                entrada=true;
+                break;
+            }
+        }
+            if (entrada) {
+                System.out.println("Valor encontrado no vetor!");
+            } else {
+                System.out.println("Valor NÃO encontrado no vetor.");
+            }
+    }
+}
