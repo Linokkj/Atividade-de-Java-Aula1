@@ -1,0 +1,37 @@
+package pl;
+
+import java.util.Scanner;
+
+public class Pl {
+    public static void main(String[]args){
+        Scanner ler = new Scanner (System.in);
+    
+        System.out.print("Qual carro que vc quer vender: ");
+        String nomes = ler .nextLine();
+        
+        System.out.print("Qual o preco do seu carro: ");
+        double precos=ler.nextDouble();
+        
+        carro p0 = new carro();
+        carro p1 = new carro (nomes,precos);
+    
+        
+        p1.info();
+        
+        p1.preco = p1.alterar(p1.preco);
+        p0.alterar(p0.preco);
+         System.out.println("Novo carro: "+ p1.nome);
+        System.out.println("Carro de entrada: "+p0.nome);
+        System.out.println("Novo preco: "+ p1.preco);
+        System.out.println("Preco do carro de entrada: "+p0.preco);
+        
+        if (p0.preco>p1.preco){
+        System.out.println(p0+"ainda falta");}
+        else if (p1.preco>p0.preco){
+        System.out.println(p1+"seu o seu")}
+            
+        }
+        
+    }
+  
+
