@@ -1,0 +1,464 @@
+Questão 01 
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner no = new Scanner(System.in);
+
+        int n[] ={1,2,3,4,5};
+        for(int a=0; a<=4;a++){
+            System.out.print(n[a]);
+        }
+    }
+}
+
+Questão 02
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner no = new Scanner(System.in);
+
+        int soma =0;
+        int n[] ={1,1,1,1,1,1};
+        for(int a=0; a<=5;a++){
+            soma += n[a];
+        }
+        System.out.print(soma);
+    }
+}
+
+Questão 03
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner no = new Scanner(System.in);
+        
+        int n[] ={1,2,3,4,5,6,7,67};
+        int m = n[0];
+
+        for(int a=0; a<n.length;a++){
+            if (n[a]>m){
+                m=n[a];
+            }
+        }
+        System.out.print(m);
+    }
+} 
+
+Questão 04
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner no = new Scanner(System.in);
+
+        int n[] ={22,222,333,444,555,665,777,888};
+        int m = n[0];
+
+        for(int a=0; a<n.length;a++){
+            if (n[a]<m){
+                m=n[a];
+            }
+        }
+        System.out.print(m);
+    }
+}
+
+Questão 05
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner no = new Scanner(System.in);
+
+        int n[] ={1,2,3,4,5,6,7,8,9,10};
+        int d = n[0];
+
+        for(int a=0; a<n.length;a++){
+            if (n[a] % 2==0){
+                d=n[a];
+                System.out.println("numero "+d+" Sao par");
+            }
+        }
+    }
+}
+
+Questão 06
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner no = new Scanner(System.in);
+
+        int n[] = {10, 10, 10, 10, 10, 10, 10, 10, 10, 10};
+        int m = 0;
+        int d = 0;
+
+        for (int a = 0; a < n.length; a++) {
+            m += n[a];
+            d = m/n.length;
+        }
+        System.out.println(d);
+
+    }
+}
+
+Questão 07 
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner no = new Scanner(System.in);
+
+        String n[]={"Lino", "Lucas", "Nohan", "Primo", "Miguel", "Brayan", "Halaand", "GT", "Gu"};
+
+
+        for (int a = 0; a < n.length; a++) {
+            System.out.println(n[a]+" "+a);
+        }
+
+
+    }
+}
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner no = new Scanner(System.in);
+
+        String n[]={"Lino", "Lucas", "Nohan", "Primo", "Miguel", "Brayan", "Halaand", "GT", "Gu"};
+
+
+        for (int a = 0; a < n.length; a++) {
+            System.out.println(n[a]+" "+a);
+        }
+
+
+    }
+}
+
+Questão 08
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner no = new Scanner(System.in);
+
+        int n[] = {1,2,3,4,5,6,7};
+
+        System.out.println("coloque uma dessa opicao");
+
+        System.out.println("1,2,3,4,5,6,7");
+
+        int v = no.nextInt();
+
+        boolean entrada = false;
+
+        for (int a=0;a<n.length;a++){
+            if (n[a]==v){
+                entrada=true;
+                break;
+            }
+        }
+            if (entrada) {
+                System.out.println("Valor encontrado no vetor!");
+            } else {
+                System.out.println("Valor NÃO encontrado no vetor.");
+            }
+    }
+}
+
+Questão 09
+
+package paulo;
+import java.util.Scanner;
+
+public class Paulo {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+       System.out.print("qual e o seu nome? ");
+       
+       String n = sc.nextLine();
+       
+       String[] a = new String[5];
+       System.out.println(n);
+    }
+}
+
+Questão 10
+
+package paulo;
+import java.util.Scanner;
+
+public class Paulo {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+       System.out.print("qual e o seu nome? ");
+       
+       String n = sc.nextLine();
+       
+       
+       String[] a = new String[5];
+       int t = n.length ();
+       System.out.println("seu nome e "+n+"o tamanho do seu nom e letra"+t);
+    }
+}
+
+Questão 11
+
+package paulo;
+import java.util.Scanner;
+
+public class Paulo {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+       System.out.print("qual e o seu nome? ");
+       
+       String n = sc.nextLine();
+       
+       
+       String[] a = new String[5];
+       int t = n.length ();
+       String max = n.toUpperCase();
+       System.out.println("seu nome e "+max+" o tamanho do seu nom e letra"+t);
+    }
+}
+
+Questão 12
+
+package paulo;
+import java.util.Scanner;
+
+public class Paulo {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+       System.out.print("qual e o seu nome? ");
+       
+       String n = sc.nextLine();
+       
+       
+       String[] a = new String[5];
+       int t = n.length ();
+       String mini = n.toLowerCase();
+       System.out.println("seu nome e "+mini+" o tamanho do seu nom e letra"+t);
+    }
+}
+
+Questão 13
+
+package paulo;
+import java.util.Scanner;
+
+public class Paulo {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+       System.out.print("escreva java:");
+       
+       String n = sc.nextLine();
+       
+       String l ="java";
+       
+       if (n.toLowerCase().contains(l.toLowerCase())){
+           System.out.println("Sao igual");
+       }else{
+       System.out.println("nao sao igual");
+       }
+    sc.close();
+    }
+}
+
+Questão 14
+
+package paulo;
+import java.util.Scanner;
+
+public class Paulo {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+       System.out.print("escreva java:");
+       
+       String n = sc.nextLine();
+       
+       String l ="java";
+       
+       if (n.equals(l)){
+           System.out.println("Sao igual");
+       }else{
+       System.out.println("nao sao igual");
+       }
+    sc.close();
+    }
+}
+
+Questão 15
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner no = new Scanner(System.in);
+
+        System.out.print("Primeiro e Ultimo: ");
+
+        String p = no.nextLine();
+        char pr = p.charAt(1);
+        char ul = p.charAt(p.length()-1);
+
+        System.out.println("Primeiro letra " + pr);
+        System.out.println("Ultimo letra " + ul);
+
+    }
+}
+
+
+Questão 16
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main (String[] args) {
+        Scanner no = new Scanner(System.in);
+
+        System.out.print("digistre um palavras e vou mostra as vogal: ");
+
+        String p = no.nextLine();
+        int c=0;
+        p = p.toLowerCase();
+
+        for (int a = 0; a<p.length(); a++){
+            char co = p.charAt(a);
+            if ( co=='a'||co =='e'||co=='i'||co=='o'||co=='u'){
+                c++;
+            }
+        }
+        System.out.print("o numero de vogais sao "+c);
+
+    }
+}
+
+Questão 17
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner no = new Scanner(System.in);
+
+        int mat[][]= {
+                {1,2},
+                {3,4}
+        };
+
+        for(int a=0;a<2;a++){
+          for (int b =0;b<2;b++){
+              System.out.print(mat[a][b]+" ");
+            }
+            System.out.println();
+        }
+
+    }
+}
+
+Questão 18
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner no = new Scanner(System.in);
+
+        int mat[][] = {
+                {1, 2, 3},
+                {4, 5, 6},
+                {7, 8, 9}
+        };
+
+        int soma = 0;
+
+        
+        for (int s = 0; s < 3; s++) {
+            for (int m = 0; m < 3; m++) {
+                soma += mat[s][m];
+            }
+        }
+
+        
+        for (int a = 0; a < 3; a++) {
+            for (int b = 0; b < 3; b++) {
+                System.out.print(mat[a][b] + " ");
+            }
+            System.out.println();
+        }
+        
+        System.out.println("Soma: " + soma);
+    }
+}
+
+Questão 19
+
+package pl;
+
+public class main {
+	    public static void main(String[] args) {
+	        int [][] mat = {
+	            {1 , 2 , 3 },
+	            {4 , 5 , 6 },
+	            {7 , 8 , 9 }
+	        };
+	            
+	        
+	        int c = mat[0][0];
+	        int b = mat[1][1]; // fixed
+	        int a = mat[2][2];
+	        
+	        System.out.println(c);
+	        System.out.println(b);
+	        System.out.println(a);
+	        
+	}
+}
+
+Questão 20
+
+package pl;
+
+public class main {
+	    public static void main(String[] args) {
+	        int [][] mat = {
+	            {1 , 2 , 3 },
+	            {4 , 5 , 6 },
+	            {7 , 8 , 9 }
+	        };
+	        
+	        int c = 0;
+	        
+	        for(int i = 0; i < 3; i++) {
+	            for(int j = 0; j < 3; j++) {
+	            	if (mat[j][i] %2==0) {
+	            		c++;		
+	            	}
+	            }
+	        }    
+	        System.out.println(c); 
+	}
+}
