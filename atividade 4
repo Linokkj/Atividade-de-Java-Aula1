@@ -1,0 +1,14 @@
+package pai;
+
+public class filho {
+    private int preco;
+    
+    public int getpreco(){
+        return preco;
+    }
+    public void setpreco(int nvpreco){
+        if (preco>0){
+        this.preco=preco;}
+        else{System.out.print("n pode");}
+    }
+}
