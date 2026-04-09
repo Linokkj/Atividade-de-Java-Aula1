@@ -44,3 +44,41 @@ public class filho {
 }
 
 Questao 3
+
+package paii;
+
+public class Paii {
+    public static void main(String[] args) {
+        filho p = new filho(10,5);
+        System.out.println(p.dado());
+    }
+}  
+
+package paii;
+
+public class filho {
+     
+   int num1;
+   int num2;
+    public filho(int a, int b){
+        this.num1 = a;
+        this.num2 = b;
+    }
+    
+    public double media(){
+        return (num1+num2)/2.0;
+    }
+    
+    public String volta(){
+        if (media() >6){
+            return"maior q 6";
+        }else{
+            return "menor ou igual a 6";
+    }
+ }
+        
+
+    public String dado(){
+        return "primeiro numero: "+num1+"Segundo numero: "+num2+"soma: "+media() ;
+    }    
+}
