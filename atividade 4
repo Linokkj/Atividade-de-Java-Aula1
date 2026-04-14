@@ -82,3 +82,46 @@ public class filho {
         return "primeiro numero: "+num1+"Segundo numero: "+num2+"soma: "+media() ;
     }    
 }
+
+Questao 04
+
+package pai;
+
+public class filho {
+        
+    private int saldo;
+    int sacar;
+    
+    
+    
+    public filho(int saldoInicial) {
+        
+        if (saldo >=0){
+            this.saldo = saldoInicial;
+        }else{
+            this.saldo=0;}
+    }
+    
+    public void deposito(int valor){
+        if(valor>0){
+        this.saldo += valor;
+        System.out.print("deposito "+valor+" sucesso");
+        }else{
+            System.out.print("invalido");}
+        }
+     public boolean sacar(double valor) {
+        if (valor > 0 && this.saldo >= valor) {
+        this.saldo -= valor;
+        System.out.println("Saque de R$" + valor);
+        return true;
+        } else {
+        System.out.println("Saldo insuficiente");
+        return false;
+        }
+    }
+    public int getSaldo(){
+        return this.saldo;
+    }
+}
+
+Questao 05
