@@ -87,6 +87,20 @@ Questao 04
 
 package pai;
 
+public class pai {
+    public static void main(String[] args) {
+
+        filho p = new filho(500);
+        p.mostraSaldo();
+        p.deposito(250);
+        p.sacar(67);
+       
+        
+    }
+}
+
+package pai;
+
 public class filho {
         
     private int saldo;
@@ -105,23 +119,423 @@ public class filho {
     public void deposito(int valor){
         if(valor>0){
         this.saldo += valor;
-        System.out.print("deposito "+valor+" sucesso");
+        System.out.print("deposito "+valor+" sucesso ");
         }else{
-            System.out.print("invalido");}
+            System.out.print("invalido ");}
         }
      public boolean sacar(double valor) {
         if (valor > 0 && this.saldo >= valor) {
         this.saldo -= valor;
-        System.out.println("Saque de R$" + valor);
+        System.out.println("Saque de R$ " + valor);
         return true;
         } else {
-        System.out.println("Saldo insuficiente");
+        System.out.println("Saldo insuficiente ");
         return false;
         }
     }
+     
+     public void mostraSaldo(){
+         System.out.print(this.saldo+" seu salde e de");
+     }
+             
+             
     public int getSaldo(){
         return this.saldo;
     }
 }
 
 Questao 05
+
+package pai;
+
+public class pai {
+    public static void main(String[] args) {
+
+        filho p = new filho("camalo","rato,");
+        p.dado();
+
+    }
+}
+
+package pai;
+
+public class filho {
+        
+    private String modelo;
+    private String marca;
+    
+   public filho(String marca, String modelo){
+       this.marca = marca;
+       this.modelo = modelo;        
+   }
+   public void dado(){
+   System.out.print("------------");
+   System.out.print(" modelo do carro "+this.modelo);
+   System.out.print(" modelo do marca "+this.marca);
+   System.out.print("------------");
+   }
+}
+
+Questao 06
+
+package pai;
+
+public class pai {
+    public static void main(String[] args) {
+
+        filho p = new filho("iudeu",2);
+        p.dado();
+
+    }
+}
+
+package pai;
+
+public class filho {
+        
+    private String nome;
+    private int idade;
+    
+    public filho(String nome,int idade){
+        this.nome = nome;
+        this.idade = idade;
+    }
+    public void dado(){
+     System.out.println("-------------------");
+   System.out.print(" modelo do carro "+this.nome);
+   System.out.println(" modelo do marca "+this.idade);
+   System.out.println("-------------------");
+    }
+}
+
+Questao 07
+
+package pai;
+
+public class pai {
+    public static void main(String[] args) {
+
+        filho p = new filho("iudeu ",2);
+        p.dado();
+        p.som();
+        
+        System.out.println("cachorro");
+        
+        mae c= new mae("apolo",3,"feio");
+        c.dados();  
+        c.som();
+    } 
+}
+
+package pai;
+
+public class filho {
+    private String nome;
+    private int idade;
+
+    public filho(String nome, int idade) {
+        this.nome = nome;
+        this.idade = idade;
+    }
+
+    public String getnome() {
+        return nome;
+    }
+
+    public int getidade() {
+        return idade;
+    }
+
+    public void som() {
+        System.out.println("auau");
+    }
+    
+    public void dado() {
+        System.out.println("Nome: " + this.nome);
+        System.out.println("Idade: " + this.idade + " anos");
+    }
+}
+
+package pai;
+public class mae extends filho {
+    
+    private String raca;
+    
+    public mae(String nome, int idade,String raca) {
+        super(nome, idade);
+        this.raca = raca;
+    }
+    
+    public void som(){
+         System.out.println("auau");
+    }
+    public void dados(){
+        dado();
+        System.out.println("raca: "+ this.raca);
+    }
+ 
+}
+
+Questao 08
+
+package pai;
+
+public class pai {
+    public static void main(String[] args) {
+
+        filho p = new filho("iudeu ",2);
+        p.dado();
+        p.som();
+        
+        System.out.println("cachorro");
+        
+        mae c= new mae("apolo",3,7);
+        c.dados();  
+        c.som();
+    } 
+}    
+
+package pai;
+
+public class filho {
+    private String nome;
+    private int idade;
+
+    public filho(String nome, int idade) {
+        this.nome = nome;
+        this.idade = idade;
+    }
+
+    public String getnome() {
+        return nome;
+    }
+
+    public int getidade() {
+        return idade;
+    }
+
+    public void som() {
+        System.out.println("auau");
+    }
+    
+    public void dado() {
+        System.out.println("Nome: " + this.nome);
+        System.out.println("Idade: " + this.idade + " anos");
+    }
+}
+
+package pai;
+public class mae extends filho {
+    
+    private int numvida;
+    
+    public mae(String nome, int idade,int numvida) {
+        super(nome, idade);
+        this.numvida = numvida;
+    }
+     
+    public void som(){
+         System.out.println("miau");
+    }
+    public void dados(){
+        dado();
+        System.out.println("Numero de vida: "+ this.numvida);
+    }
+ 
+}
+
+Questao 9
+
+package pai;
+
+public class pai {
+    public static void main(String[] args) {
+
+        filho p = new filho("Mustang ",1970);
+        p.ligar();
+        p.dado();
+        
+    } 
+}
+
+package pai;
+
+public class filho {
+    private String marca;
+    private int ano;
+    
+    public filho(String marca,int ano) {
+    this.marca = marca;
+    this.ano = ano;        
+}
+    
+    public void ligar(){
+        System.out.println("ligado");    
+    }
+    public void dado(){
+    System.out.println(this.ano);
+    System.out.println(this.marca);
+    }
+}
+
+Questao 20
+
+package pai;
+
+public class pai {
+    public static void main(String[] args) {
+
+        filho p = new filho("Mustang ",1970);
+        p.ligar();
+        p.dado();
+        
+        System.out.println("moto");
+        
+        mae p2 = new mae ("Honda", 2019,160);
+        p2.dados();
+        p2.ligar();
+        
+    } 
+}
+
+package pai;
+
+public class filho {
+    private String marca;
+    private int ano;
+    
+    public filho(String marca,int ano) {
+    this.marca = marca;
+    this.ano = ano;        
+}
+    
+    public void ligar(){
+        System.out.println("ligado");    
+    }
+    public void dado(){
+    System.out.println(this.marca);
+    System.out.println(this.ano);
+    }
+}
+
+package pai;
+public class mae extends filho {
+    
+    private int cilindrada;
+    
+    public mae(String marca, int ano,int cilindrada ) {
+        super(marca, ano);
+        this.cilindrada = cilindrada;
+    }
+    @Override 
+    public void ligar(){
+         System.out.println("ligada");
+    }
+    public void dados(){
+        dado();
+        System.out.println("potencia"+ this.cilindrada);
+    }
+ 
+}
+
+Questao 21
+
+package pai;
+
+public class pai {
+    public static void main(String[] args) {
+
+        filho p = new filho("Luiz " ,6000);
+        p.dado(); 
+    } 
+}
+
+package pai;
+
+public class filho {
+    private int salario;
+    private String nome;
+    
+    public filho(String nome,int salario){
+        this.nome = nome;
+        this.salario = salario;
+    }
+    public int cs(){
+        return this.salario;
+    }
+    public String getnome(){
+        return nome;
+    }
+    public int getsalario(){
+        return salario;
+    }
+    public void dado(){
+    System.out.println(this.nome);      
+    System.out.println(cs());
+    
+    }
+}
+
+Questao 12
+
+package pai;
+
+public class pai {
+    public static void main(String[] args) {
+
+        filho p = new filho("Luiz " ,6000);
+        p.dado();
+        
+        System.out.println("Gerente");
+        
+        mae p2 = new mae(9000 , 2000,"kaua");
+        p2.dados();
+    } 
+}
+package pai;
+
+public class filho {
+    private int salario;
+    private String nome;
+    
+    public filho(String nome,int salario){
+        this.nome = nome;
+        this.salario = salario;
+    }
+    public int cs(){
+        return this.salario;
+    }
+    public String getnome(){
+        return nome;
+    }
+    public int getsalario(){
+        return salario;
+    }
+    public void dado(){
+    System.out.println(this.nome);      
+    System.out.println(cs());
+    
+    }
+}
+package pai;
+public class mae extends filho {
+    private int bonus;
+
+    public mae(int bonus,int salariobase,String nome){
+        super(nome,salariobase);
+        this.bonus = bonus;
+    }
+    
+    @Override
+    public int cs(){
+        return getsalario()+ this.bonus;
+    }
+    public void dados(){
+    System.out.println(getnome()); 
+    System.out.println(getsalario());
+    System.out.println(this.bonus);
+    System.out.println(cs());
+    }
+}
+
+Questao 13
